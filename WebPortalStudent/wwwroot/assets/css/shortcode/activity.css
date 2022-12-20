@@ -25,7 +25,7 @@ NOTE: This is Activity style file. All Header related style included in this fil
     font-size: 18px;
     color: #555555;
     text-transform: uppercase;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Sriracha', cursive;
     -webkit-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
@@ -34,7 +34,7 @@ NOTE: This is Activity style file. All Header related style included in this fil
 .activity-content p{
     font-size: 14px;
     color: #555555;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Sriracha', cursive;
     margin-bottom: 0px;
     -webkit-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;

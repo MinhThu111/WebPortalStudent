@@ -1,7 +1,15 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
+    var dataTeacher = ViewBag.data as IEnumerable<M_Person>;
+    var countData = ViewBag.CountData as IEnumerable<M_Count>;
+
 }
+
+
+
+
 <section id="slider-container">
+
     <div class="kid-owl-slider">
         <div class="single-slide hs-item">
             <div class="slider-content-area">
@@ -11,9 +19,9 @@
                             <div class="slider-content dis-table">
                                 <div class="dis-table-cell hs-content slide-content text-left">
                                     <h3>KIDSCHOOL </h3>
-                                    <h1>PERFECT START</h1>
-                                    <h2>FOR YOUR CHILD</h2>
-                                    <a href="#" class="btn">learn more</a>
+                                    <h1>NGÔI NHÀ MỚI</h1>
+                                    <h2>GIÀNH CHO CON BẠN</h2>
+                                    <a href="#" class="btn">Thông tin thêm</a>
                                 </div>
                             </div>
                             <div class="slider-img hs-content">
@@ -32,9 +40,9 @@
                             <div class="slider-content dis-table">
                                 <div class="dis-table-cell hs-content slide-content text-left">
                                     <h3>KIDSCHOOL </h3>
-                                    <h1>PERFECT START</h1>
-                                    <h2>FOR YOUR CHILD</h2>
-                                    <a href="#" class="btn">learn more</a>
+                                    <h1>NGÔI NHÀ MỚI</h1>
+                                    <h2>GIÀNH CHO CON BẠN</h2>
+                                    <a href="#" class="btn">Thông tin thêm</a>
                                 </div>
                             </div>
                             <div class="slider-img hs-content">
@@ -53,9 +61,9 @@
                             <div class="slider-content dis-table">
                                 <div class="dis-table-cell hs-content slide-content text-left">
                                     <h3>KIDSCHOOL </h3>
-                                    <h1>PERFECT START</h1>
-                                    <h2>FOR YOUR CHILD</h2>
-                                    <a href="#" class="btn hidden-xs">learn more</a>
+                                    <h1>NGÔI NHÀ MỚI</h1>
+                                    <h2>GIÀNH CHO CON BẠN</h2>
+                                    <a href="#" class="btn">Thông tin thêm</a>
                                 </div>
                             </div>
                             <div class="slider-img hs-content">
@@ -73,8 +81,8 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="section-title">
-                    <h2>our activities</h2>
-                    <p>There are many varieations of passages Lorem Ipsum maksu rez majority have</p>
+                    <h2>Hoạt động nổi bật</h2>
+                    <p>Ngoài việc học chúng tôi còn tổ chức nhiều hoạt động với phương châm chơi mà học - học mà chơi</p>
                 </div>
             </div>
         </div>
@@ -85,8 +93,11 @@
                         <img src="~/assets/images/activity/1.png" alt="activity">
                     </div>
                     <div class="activity-content">
-                        <h3><a href="#">our Teacher</a></h3>
-                        <p>There are many varieations of passages Lorem Ipsum available majority have only alteration some form, have only </p>
+                        <h3><a href="#">Giành cho giảng viên</a></h3>
+                        <p>
+                            Chúng tôi đem lại các hoạt động đa dạng thuộc nhiều lĩnh vực khác nhau, phù hợp với các giảng viên đang giảng dạy tại trường. Hằng năm luôn có các chuyến du
+                            lịch trong và ngoài nước cùng với các buổi tập huấn chuyên ngành.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -96,8 +107,8 @@
                         <img src="~/assets/images/activity/2.png" alt="activity">
                     </div>
                     <div class="activity-content">
-                        <h3><a href="#">sports</a></h3>
-                        <p>There are many varieations of passages Lorem Ipsum available majority have only alteration some form, have only </p>
+                        <h3><a href="#">Thể thao</a></h3>
+                        <p>Hằng năm trường luôn tổ chức cuộc thi thể thao vào mùa xuân và hè. Đảm bảo sức khỏa cho học sinh và giảng viên sau những giờ học tập căn thẳng</p>
                     </div>
                 </div>
             </div>
@@ -107,8 +118,8 @@
                         <img src="~/assets/images/activity/3.png" alt="activity">
                     </div>
                     <div class="activity-content">
-                        <h3><a href="#">bus service</a></h3>
-                        <p>There are many varieations of passages Lorem Ipsum available majority have only alteration some form, have only </p>
+                        <h3><a href="#">Dịch vụ đưa đón</a></h3>
+                        <p>Chúng tôi cung cấp dịch vụ đưa đón cho các bạn học sinh trong nội thành và các vùng gần trường không quá 10km</p>
                     </div>
                 </div>
             </div>
@@ -118,8 +129,11 @@
                         <img src="~/assets/images/activity/4.png" alt="activity">
                     </div>
                     <div class="activity-content">
-                        <h3><a href="#">music class</a></h3>
-                        <p>There are many varieations of passages Lorem Ipsum available majority have only alteration some form, have only </p>
+                        <h3><a href="#">Câu lạc bộ âm nhạc</a></h3>
+                        <p>
+                            Bên cạnh các hoạt động thể thao, nhà trường còn thành lập câu lạc bộ âm nhạc để đáp ứng niềm đam mê của các bạn học sinh có mong muốn hoặc hứng thú với âm nhạc có một nơi
+                            để trải nghiệm
+                        </p>
                     </div>
                 </div>
             </div>
@@ -129,8 +143,8 @@
                         <img src="~/assets/images/activity/5.png" alt="activity">
                     </div>
                     <div class="activity-content">
-                        <h3><a href="#">language</a></h3>
-                        <p>There are many varieations of passages Lorem Ipsum available majority have only alteration some form, have only </p>
+                        <h3><a href="#">Ngôn ngữ</a></h3>
+                        <p>Trường của chúng tôi có các bạn học sinh đến từ nhiều nơi trên thế giới với sự đa dạng về ngôn ngữ, màu da và cả văn hóa. Đến với chúng tôi bạn có thể tiếp xúc với nhiều thứ mới lạ trên thế giới </p>
                     </div>
                 </div>
             </div>
@@ -140,8 +154,11 @@
                         <img src="~/assets/images/activity/6.png" alt="activity">
                     </div>
                     <div class="activity-content">
-                        <h3><a href="#">custom food</a></h3>
-                        <p>There are many varieations of passages Lorem Ipsum available majority have only alteration some form, have only </p>
+                        <h3><a href="#">Thức ăn</a></h3>
+                        <p>
+                            Nhà trờng hỗ trợ bữa trưa cho tất cả học sinh với đội ngũ chuyên viên nghiên cứu đầy đủ dinh dưỡng.
+                            thực phẩm tươi sống đầy đủ sinh dưỡng đảm bảo an toàn thực phẩm
+                        </p>
                     </div>
                 </div>
             </div>
@@ -153,18 +170,23 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center">
-                    <h2>gallery</h2>
-                    <p>There are many varieations of passages Lorem Ipsum maksu rez majority have </p>
+                    <h2>Hình ảnh</h2>
+                    <p>
+                        Thư viện của trường được đầu tư với hàng nghìn đầu sách mới thuộc nhiều lĩnh vực và ngôn ngữ khác nhau. Không gian thoán mát sẽ tạo nên một
+                        nơi phù hợp với những bạn có niềm đam mê với sách
+                    </p>
                 </div>
             </div>
         </div>
         <div class="inner">
             <div class="portfolio-menu mb-40 text-center">
-                <button class="active" data-filter="*">all</button>
-                <button data-filter=".cat1">creative</button>
-                <button data-filter=".cat2">sports</button>
-                <button data-filter=".cat3">class</button>
-                <button data-filter=".cat4">video</button>
+                <button class="active" data-filter="*">
+                    Tất cả
+                </button>
+                <button data-filter=".cat1">Sáng tạo</button>
+                <button data-filter=".cat2">Thể thao</button>
+                <button data-filter=".cat3">Lớp học</button>
+                <button data-filter=".cat4">Video</button>
             </div>
             <div class="grid row">
                 <div class="col-md-3 col-12 col-12 grid-item cat1 cat3">
@@ -229,7 +251,7 @@
                 </div>
             </div>
             <div class="load text-center">
-                <a class="hvr-bounce-to-right" href="#">load more</a>
+                <a class="hvr-bounce-to-right" href="#">Xem thêm</a>
             </div>
         </div>
     </div>
@@ -237,36 +259,46 @@
 <div class="fun-area pt-90 pb-85">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-fun text-center">
-                    <div class="fun-img">
-                        <img src="~/assets/images/fun/1.png" alt="fun">
+            @foreach (var item in countData)
+            {
+                if (item.name == "teacher")
+                {
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-fun text-center">
+                            <div class="fun-img">
+                                <img src="~/assets/images/fun/1.png" alt="fun">
+                            </div>
+                            <div class="fun-content">
+                                <h3 class="counter">@item.count</h3>
+                                <h5>giảng viên &amp; nhân viên</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="fun-content">
-                        <h3 class="counter">28</h3>
-                        <h5>teacher &amp; stuff</h5>
+                }
+                else
+                {
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-fun text-center">
+                            <div class="fun-img">
+                                <img src="~/assets/images/fun/2.png" alt="fun">
+                            </div>
+                            <div class="fun-content">
+                                <h3 class="counter">@item.count</h3>
+                                <h5>học sinh đã đăng ký</h5>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-fun text-center">
-                    <div class="fun-img">
-                        <img src="~/assets/images/fun/2.png" alt="fun">
-                    </div>
-                    <div class="fun-content">
-                        <h3 class="counter">250</h3>
-                        <h5>active students</h5>
-                    </div>
-                </div>
-            </div>
+                }
+            }
             <div class="col-lg-3 col-sm-6">
                 <div class="single-fun text-center">
                     <div class="fun-img">
                         <img src="~/assets/images/fun/3.png" alt="fun">
                     </div>
                     <div class="fun-content">
-                        <h3 class="counter">350</h3>
-                        <h5>satisfied students</h5>
+                        <h3 class="counter">@ViewBag.SumData</h3>
+                        <h5>học sinh và nhân viên</h5>
                     </div>
                 </div>
             </div>
@@ -277,7 +309,7 @@
                     </div>
                     <div class="fun-content">
                         <h3 class="counter">12</h3>
-                        <h5>classes</h5>
+                        <h5>lớp</h5>
                     </div>
                 </div>
             </div>
@@ -289,89 +321,35 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="section-title">
-                    <h2>teachers</h2>
-                    <p>There are many varieations of passages Lorem Ipsum maksu rez majority have</p>
+                    <h2>Giảng viên</h2>
+                    <p>Đội ngữ giảng viên trẻ nhiệt huyết, tân tậm và kiến thức chuyên môn vững vàng</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="teacher-owl">
-                <div class="col-md-3 col-sm-4 col-xs-12">
-                    <div class="single-teacher">
-                        <div class="teacher-img">
-                            <img src="~/assets/images/teacher/1.jpg" alt="teacher">
-                            <div class="teacher-content">
-                                <h3>Amily</h3>
-                                <p>English Teacher</p>
-                                <div class="teacher-hover">
-                                    <ul>
-                                        <li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icofont icofont-social-google-plus"></i></a></li>
-                                        <li><a href="#"><i class="icofont icofont-social-pinterest"></i></a></li>
-                                        <li><a href="#"><i class="icofont icofont-social-twitter"></i></a></li>
-                                    </ul>
+                @foreach (var item in dataTeacher)
+                {
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-teacher">
+                            <div class="teacher-img">
+                                <img src=@item.avatarUrl alt="teacher" style="width:269.99px; height:360px;object-fit:cover">
+                                <div class="teacher-content">
+                                    <h3>@item.lastName @item.firstName</h3>
+                                    <p>English Teacher</p>
+                                    <div class="teacher-hover">
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/"><i class="icofont icofont-social-facebook"></i></a></li>
+                                            <li><a href="#"><i class="icofont icofont-social-google-plus"></i></a></li>
+                                            <li><a href="https://www.pinterest.com/"><i class="icofont icofont-social-pinterest"></i></a></li>
+                                            <li><a href="https://twitter.com/"><i class="icofont icofont-social-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12">
-                    <div class="single-teacher">
-                        <div class="teacher-img">
-                            <img src="~/assets/images/teacher/2.jpg" alt="teacher">
-                            <div class="teacher-content">
-                                <h3>Kate Watson</h3>
-                                <p>Sports Teacher</p>
-                                <div class="teacher-hover">
-                                    <ul>
-                                        <li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icofont icofont-social-google-plus"></i></a></li>
-                                        <li><a href="#"><i class="icofont icofont-social-pinterest"></i></a></li>
-                                        <li><a href="#"><i class="icofont icofont-social-twitter"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12">
-                    <div class="single-teacher">
-                        <div class="teacher-img">
-                            <img src="~/assets/images/teacher/3.jpg" alt="teacher">
-                            <div class="teacher-content">
-                                <h3>Nipu Watson</h3>
-                                <p>Bangla Teacher</p>
-                                <div class="teacher-hover">
-                                    <ul>
-                                        <li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icofont icofont-social-google-plus"></i></a></li>
-                                        <li><a href="#"><i class="icofont icofont-social-pinterest"></i></a></li>
-                                        <li><a href="#"><i class="icofont icofont-social-twitter"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 hidden-sm col-xs-12">
-                    <div class="single-teacher">
-                        <div class="teacher-img">
-                            <img src="~/assets/images/teacher/4.jpg" alt="teacher">
-                            <div class="teacher-content">
-                                <h3>Lara Wilems</h3>
-                                <p>Math Teacher</p>
-                                <div class="teacher-hover">
-                                    <ul>
-                                        <li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icofont icofont-social-google-plus"></i></a></li>
-                                        <li><a href="#"><i class="icofont icofont-social-pinterest"></i></a></li>
-                                        <li><a href="#"><i class="icofont icofont-social-twitter"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                }
             </div>
         </div>
     </div>
@@ -381,8 +359,8 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="section-title text-center">
-                    <h2>our events</h2>
-                    <p>There are many varieations of passages Lorem Ipsum maksu rez majority have</p>
+                    <h2>Các sự kiện trong năm</h2>
+                    <p>Trong năm trường chúng tôi tổ chức hơn 10 hoạt động và các buổi giaoa lưu trao đổi học viên với các trường trên toàn thế giới</p>
                 </div>
             </div>
         </div>
@@ -399,9 +377,9 @@
                                     </div>
                                 </div>
                                 <div class="event-content">
-                                    <h3><a href="#">sports day </a><span>21 Feb</span></h3>
+                                    <h3><a href="#">sport day </a><span>21 Feb</span></h3>
                                     <p>
-                                        It is a long established fact that a will be distracted by  readable content
+                                        Là ngày hội thể thao truyền thống giao lưu với các trường trong khu vực
                                     </p>
                                 </div>
                             </div>
@@ -417,7 +395,7 @@
                                 <div class="event-content">
                                     <h3><a href="#">colors day </a><span>29 Feb</span></h3>
                                     <p>
-                                        It is a long established fact that a will be distracted by  readable content
+                                        Đây là ngày mà các thành viên của đại gia đình thỏa sức sáng tạo với những màu sắc tuyệt vời
                                     </p>
                                 </div>
                             </div>
@@ -431,9 +409,9 @@
                                     </div>
                                 </div>
                                 <div class="event-content">
-                                    <h3><a href="#">sports day </a><span>21 Feb</span></h3>
+                                    <h3><a href="#">sport day </a><span>21 Feb</span></h3>
                                     <p>
-                                        It is a long established fact that a will be distracted by  readable content
+                                        Là ngày hội thể thao truyền thống giao lưu với các trường trong khu vực
                                     </p>
                                 </div>
                             </div>
@@ -449,11 +427,12 @@
                                 <div class="event-content">
                                     <h3><a href="#">colors day </a><span>29 Feb</span></h3>
                                     <p>
-                                        It is a long established fact that a will be distracted by  readable content
+                                        Đây là ngày mà các thành viên của đại gia đình thỏa sức sáng tạo với những màu sắc tuyệt vời
                                     </p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-xs-12">
                             <div class="single-event">
                                 <div class="event-img">
@@ -463,9 +442,9 @@
                                     </div>
                                 </div>
                                 <div class="event-content">
-                                    <h3><a href="#">sports day </a><span>21 Feb</span></h3>
+                                    <h3><a href="#">sport day </a><span>21 Feb</span></h3>
                                     <p>
-                                        It is a long established fact that a will be distracted by  readable content
+                                        Là ngày hội thể thao truyền thống giao lưu với các trường trong khu vực
                                     </p>
                                 </div>
                             </div>
@@ -481,7 +460,7 @@
                                 <div class="event-content">
                                     <h3><a href="#">colors day </a><span>29 Feb</span></h3>
                                     <p>
-                                        It is a long established fact that a will be distracted by  readable content
+                                        Đây là ngày mà các thành viên của đại gia đình thỏa sức sáng tạo với những màu sắc tuyệt vời
                                     </p>
                                 </div>
                             </div>
@@ -520,8 +499,8 @@
             <div class="testimonial-owl">
                 <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                     <div class="single-testimonial">
-                        <h2>WHAT PARENTS SAY</h2>
-                        <p>There are many varieations of passages Lorem Ipsum available for our majority have not only alteration. </p>
+                        <h2>Nhận xét của phụ huynh</h2>
+                        <p>Con của tôi đã được tiếp cận với phương thức giáo dục hiện đại và quen biết thêm nhiều bạn mới </p>
                         <h4>Maksud reza</h4>
                     </div>
                 </div>
@@ -534,8 +513,8 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="section-title">
-                    <h2>classes</h2>
-                    <p>There are many varieations of passages Lorem Ipsum maksu rez majority have</p>
+                    <h2>Các lớp học</h2>
+                    <p>Có nhiều lớp học đa dạng phù hớp với nhiều lứa tuổi</p>
                 </div>
             </div>
         </div>
@@ -551,9 +530,9 @@
                     <div class="class-content">
                         <h3>little lambs</h3>
                         <ul>
-                            <li>years old <span>3-4</span></li>
-                            <li>kids <span>24</span></li>
-                            <li>fees <span>270$</span></li>
+                            <li>Tuổi<span>3-4</span></li>
+                            <li>Số luượng<span>24</span></li>
+                            <li>phí<span>270$</span></li>
                         </ul>
                     </div>
                 </div>
@@ -567,11 +546,11 @@
                         </div>
                     </div>
                     <div class="class-content">
-                        <h3>master kids</h3>
+                        <h3>little lambs</h3>
                         <ul>
-                            <li>years old <span>4-5</span></li>
-                            <li>kids <span>21</span></li>
-                            <li>fees <span>300$</span></li>
+                            <li>Tuổi<span>3-4</span></li>
+                            <li>Số luượng<span>24</span></li>
+                            <li>phí<span>270$</span></li>
                         </ul>
                     </div>
                 </div>
@@ -585,11 +564,11 @@
                         </div>
                     </div>
                     <div class="class-content">
-                        <h3>creative kids</h3>
+                        <h3>little lambs</h3>
                         <ul>
-                            <li>years old <span>5-6</span></li>
-                            <li>kids <span>18</span></li>
-                            <li>fees <span>320$</span></li>
+                            <li>Tuổi<span>3-4</span></li>
+                            <li>Số luượng<span>24</span></li>
+                            <li>phí<span>270$</span></li>
                         </ul>
                     </div>
                 </div>
@@ -602,8 +581,8 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="section-title">
-                    <h2>quick contact</h2>
-                    <p>There are many varieations of passages Lorem Ipsum maksu rez majority have</p>
+                    <h2>liên hệ nhanh</h2>
+                    <p>Nếu bạn muốn được tư vấn hãy liên hệ với chúng tôi</p>
                 </div>
             </div>
         </div>
@@ -614,7 +593,7 @@
                         <img src="~/assets/images/contact/1.png" alt="contact">
                     </div>
                     <div class="contact-info">
-                        <h5>Our Location</h5>
+                        <h5>Địa chỉ</h5>
                         <p>Address: Your address goes here.</p>
                     </div>
                 </div>
@@ -625,7 +604,7 @@
                         <img src="~/assets/images/contact/2.png" alt="contact">
                     </div>
                     <div class="contact-info">
-                        <h5>phone number</h5>
+                        <h5>Số điện thoại</h5>
                         <p>
                             0123456789<br>
                             0123456789
@@ -639,7 +618,7 @@
                         <img src="~/assets/images/contact/3.png" alt="contact">
                     </div>
                     <div class="contact-info">
-                        <h5>email id</h5>
+                        <h5>Địa chỉ email</h5>
                         <p>
                             demo@gmail.com<br>
                             demo@gmail.com
@@ -653,10 +632,10 @@
                         <img src="~/assets/images/contact/4.png" alt="contact">
                     </div>
                     <div class="contact-info">
-                        <h5>Kidschool Time</h5>
+                        <h5>thời gian hoạt động</h5>
                         <p>
-                            8am to 5pm, Mon to Fri<br>
-                            9am to 1am sat
+                            8am - 5pm, thứ hai - thứ sáu<br>
+                            9am - 1am thứ bảy
                         </p>
                     </div>
                 </div>

@@ -12,4 +12,62 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\assets\assets\.sass-cache\03f7563936555af25ed76a25faac13ac47635709\about.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\03f7563936555af25ed76a25faac13ac47635709\features.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\03f7563936555af25ed76a25faac13ac47635709\footer.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\03f7563936555af25ed76a25faac13ac47635709\gallery.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\03f7563936555af25ed76a25faac13ac47635709\header.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\03f7563936555af25ed76a25faac13ac47635709\pricing.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\03f7563936555af25ed76a25faac13ac47635709\review.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\03f7563936555af25ed76a25faac13ac47635709\slider.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\05e40c16e07218e3bc43358ea0c3cb86c24a7d5b\about.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\05e40c16e07218e3bc43358ea0c3cb86c24a7d5b\header.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\05e40c16e07218e3bc43358ea0c3cb86c24a7d5b\slider.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\0dcadcbbbac9a4514c120ec6477d8470a29c31fe\basic_setup.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\280a4f11aacd2ece536c52418e0542bef89b47c0\style.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\280a4f11aacd2ece536c52418e0542bef89b47c0\_variable.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\2dc3abca11b7ce7d4cb8ecb339188e3c2e132181\responsive.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\30f32e2e4f90d1089ae5b38f7a3193f8b4391bc2\style.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\30f32e2e4f90d1089ae5b38f7a3193f8b4391bc2\_variable.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\375a0424c7d7137ed78c12b52073e13cd4ce45bd\basic_setup.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\3a416854cc9021fd0b3018c88bf854e35109f84c\basic_setup.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\3a8f91f4404a31575e487a92604ad89c9bdada51\basic_setup.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\3d1baef330597db9bd0fd23a93609cf52f6ee54d\style.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\3d1baef330597db9bd0fd23a93609cf52f6ee54d\_variable.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\6474a3d4b0629bea971d701cf9c416682ca7e632\basic_setup.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\6fcffa86ae35b0fe68c6e8dbfcd1f9a3d2bbe07f\responsive.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\71329e2339e7ad9e2fecb92b1d80a3d5b7a7e853\style.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\71329e2339e7ad9e2fecb92b1d80a3d5b7a7e853\_variable.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\72b5f98765ef2dca73dc3e95394a6fa50831ee7a\responsive.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\7518acd6aadb1f7574d555d374ff90d0adef0ef2\style.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\7518acd6aadb1f7574d555d374ff90d0adef0ef2\_variable.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\799e22dbfbc7c0599c9ec736c964e964251a5aaf\basic_setup.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\ab1731c95c67dd9e92510b107e159ce031792aff\style.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\ab1731c95c67dd9e92510b107e159ce031792aff\_variable.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\b5c97feb6f6e20e58b04034e86e92d07edefd374\style.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\b5c97feb6f6e20e58b04034e86e92d07edefd374\_variable.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\bdcda4b9533c9f6ce255960a661c810f7755a390\design.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\bdcda4b9533c9f6ce255960a661c810f7755a390\features.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\bdcda4b9533c9f6ce255960a661c810f7755a390\footer.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\bdcda4b9533c9f6ce255960a661c810f7755a390\gallery.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\bdcda4b9533c9f6ce255960a661c810f7755a390\header.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\bdcda4b9533c9f6ce255960a661c810f7755a390\products.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\bdcda4b9533c9f6ce255960a661c810f7755a390\review.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\bdcda4b9533c9f6ce255960a661c810f7755a390\slider.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\bdcda4b9533c9f6ce255960a661c810f7755a390\update.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\bdcda4b9533c9f6ce255960a661c810f7755a390\why_choos.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\d40a99c0290f977234388c7987a135c19e63303e\about.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\d40a99c0290f977234388c7987a135c19e63303e\features.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\d40a99c0290f977234388c7987a135c19e63303e\footer.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\d40a99c0290f977234388c7987a135c19e63303e\gallery.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\d40a99c0290f977234388c7987a135c19e63303e\header.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\d40a99c0290f977234388c7987a135c19e63303e\pricing.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\d40a99c0290f977234388c7987a135c19e63303e\review.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\d40a99c0290f977234388c7987a135c19e63303e\slider.scssc" />
+    <None Include="wwwroot\assets\assets\.sass-cache\dee0820f6c196d10b5861616947d0ade7a54bc67\basic_setup.scssc" />
+    <None Include="wwwroot\assets\assets\scss\.sass-cache\87f88134b2e274406d696eddf2817a21a5f37943\style.scssc" />
+    <None Include="wwwroot\assets\assets\scss\.sass-cache\87f88134b2e274406d696eddf2817a21a5f37943\_variable.scssc" />
+  </ItemGroup>
+
 </Project>

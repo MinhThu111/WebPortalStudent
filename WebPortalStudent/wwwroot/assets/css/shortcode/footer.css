@@ -37,7 +37,7 @@ NOTE: This is Footer style file. All footer related style included in this file.
     border: none;
     border-bottom: 1px solid #ddd;
     height: 22px;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Sriracha', cursive;
     color :#fff;
     width: 180px;
     display: inline-block;
@@ -105,7 +105,7 @@ NOTE: This is Footer style file. All footer related style included in this file.
     margin: 0;
     color: #fff;
     font-size: 14px;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Sriracha', cursive;
     text-transform: capitalize;
 }
 .footer-bottom p a:hover{text-decoration: underline}

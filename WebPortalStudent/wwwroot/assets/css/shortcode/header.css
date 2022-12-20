@@ -9,7 +9,7 @@
 }
 .top-left ul li, .top-right a{
     display: inline-block;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Lemonada', cursive;
     font-size: 14px;
     color: #fff;
     -webkit-transition: all 0.5s ease -0s;
@@ -102,7 +102,7 @@
     display: block;
     padding: 44px 22px;
     text-transform: uppercase;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Lemonada', cursive;
     font-size: 16px;
 }
 .main-menu ul li:last-child a, .stick .main-menu ul li:last-child a {
@@ -134,7 +134,7 @@
 .main-menu ul li ul.submenu li a {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     color: #000000;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Lemonada', cursive;
     font-size: 14px;
     padding: 12px 15px;
     text-transform: capitalize;
@@ -241,7 +241,7 @@
     border: none;
     border-bottom: 1px solid #D4D4D4;
     color: #959595;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Lemonada', cursive;
     height: 36px;
     padding: 0 16px;
 }
@@ -263,10 +263,10 @@
 	width: 28px;
 }
 .modal-dialog button.close:after {display: none}
-.form-pop-up-content span a {font-family: 'Sniglet', cursive; font-size: 12px;}
+.form-pop-up-content span a {font-family: 'Lemonada', cursive; font-size: 12px;}
 .remember {
     color: #959595;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Lemonada', cursive;
     font-size: 12px;
 }
 .remember input[type="checkbox"] {

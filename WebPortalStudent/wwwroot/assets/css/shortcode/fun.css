@@ -8,10 +8,10 @@ NOTE: This is fun area style file. All Header related style included in this fil
     background: #008C99;
 }
 .fun-img{margin-bottom: 12px;}
-.fun-content h3.counter, .fun-content h5{
+.fun-content h3.counter, .fun-content h5 {
     font-size: 36px;
     color: #fff;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Sriracha', cursive;
     margin-bottom: 15px;
 }
 .fun-content h5{

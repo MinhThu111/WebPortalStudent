@@ -40,7 +40,7 @@ NOTE: This is Events style file. All Header related style included in this file.
 }
 .event-content h3 a{
     color: #555555;
-    font-family: "Sniglet",cursive;
+    font-family: "Sriracha",cursive;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 400;
@@ -57,13 +57,13 @@ NOTE: This is Events style file. All Header related style included in this file.
     float: right;
     text-transform: capitalize;
     color: #555555;
-    font-family: "Sniglet",cursive;
+    font-family: "Sriracha",cursive;
     font-weight: 400;
     margin-top: 10px;
 }
 .event-content p{
     font-size: 14px;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Sriracha', cursive;
     margin-bottom: 0;
 }
 .event-right {
@@ -73,7 +73,7 @@ NOTE: This is Events style file. All Header related style included in this file.
 .event-right h2{
     font-size: 24px;
     color: #555555;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Sriracha', cursive;
     text-transform: uppercase;
     position: relative;
     margin-bottom: 20px;
@@ -94,7 +94,7 @@ NOTE: This is Events style file. All Header related style included in this file.
 .single-right h4{
     color: #555555;
     font-size: 16px;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Sriracha', cursive;
     text-transform: uppercase;
     font-weight: 400;
 }

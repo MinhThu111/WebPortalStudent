@@ -36,10 +36,10 @@ Please do not change anything here! write in a custom.css file if required!
 /*************************
     01. General
 *************************/
-@import url('../../../../css');
+/*@import url('../../../../css');*/
 body {
     color: #555555;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Roboto', cursive;
     font-size: 14px;
     text-align: left;
 	line-height: 24px
@@ -93,7 +93,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Sniglet', cursive;
+    font-family: 'Roboto', cursive;
     margin: 0px;
     color: #555555;
 	font-weight: 400
@@ -866,7 +866,7 @@ img {
 ***********************/
 .section-title h2 {
 	font-size: 36px;
-	font-family: 'Sniglet', cursive;
+	font-family: 'Roboto', cursive;
     font-weight: 700;
     color: #555555;
     text-transform: uppercase;
@@ -886,7 +886,7 @@ img {
 .section-title p {
     font-size: 16px;
     color: #555555;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Roboto', cursive;
     margin-bottom: 48px;
 }    
 /*************************
@@ -897,7 +897,7 @@ a.button, button {
 	border-radius: 0;
 	color: #ffffff;
 	display: inline-block;
-	font-family: 'Sniglet', cursive;
+	font-family: 'Roboto', cursive;
 	font-size: 14px;
 	line-height: 40px;
 	overflow: hidden;
@@ -1238,7 +1238,7 @@ textarea:focus {
 	border-radius: 50%;
 	color: #606060;
 	display: inline-block;
-	font-family: 'Sniglet', cursive;
+	font-family: 'Roboto', cursive;
 	font-size: 14px;
 	height: 40px;
 	line-height: 42px;
@@ -1390,7 +1390,7 @@ textarea:focus {
 .banner-content h2{
     font-size: 40px;
     color: #fff;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Roboto', cursive;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -1402,7 +1402,7 @@ textarea:focus {
 .banner-breadcrumb ul li, .banner-breadcrumb ul li a{
     display: inline-block;
     text-transform: uppercase;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Roboto', cursive;
     font-size: 14px;
     color: #fff;
     -webkit-transition: all 0.5s ease 0s;
