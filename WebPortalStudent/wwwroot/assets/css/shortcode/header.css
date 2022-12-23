@@ -103,20 +103,24 @@
     padding: 44px 22px;
     text-transform: uppercase;
     font-family: 'Lemonada', cursive;
-    font-size: 16px;
+    font-size: 25px;
+    text-decoration:none;
 }
 .main-menu ul li:last-child a, .stick .main-menu ul li:last-child a {
     padding-right: 0px;
 }
 /* submenu */
 .main-menu ul li ul.submenu {
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
+    background-color: #F1F1F1 !important;
     left: 0;
     list-style: outside none none;
-    min-width: 255px;
+    min-width: 200px !important;
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    padding: 15px 10px;
+    padding: 0px !important;
+    padding-left:20px!important;
+    margin: 0px !important;
     position: absolute;
     top: 100%;
     -webkit-transition: all 0.5s ease 0s;
@@ -124,6 +128,7 @@
     visibility: hidden;
     z-index: 1000;
     box-shadow: 0px 0px 4px 0px #999;
+    text-align:left;
 }
 .main-menu ul li:hover ul.submenu{
 	opacity: 1;
@@ -131,14 +136,15 @@
 	visibility: visible;
 }
 .main-menu ul li ul.submenu li{display:block}
-.main-menu ul li ul.submenu li a {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #000000;
-    font-family: 'Lemonada', cursive;
-    font-size: 14px;
-    padding: 12px 15px;
-    text-transform: capitalize;
-}
+    .main-menu ul li ul.submenu li a {
+          background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        /*background-color: #F1F1F1;*/
+        color: #000000;
+        font-family: 'Lemonada', cursive;
+        font-size: 20px;
+        padding:10px!important;
+      /*  text-transform: capitalize;*/
+    }
 .main-menu ul > li > ul.submenu > li:hover > a{color: #008c99}
 .main-menu ul li:hover a {
     color: #008c99;
@@ -147,6 +153,7 @@
     opacity: 1;
     transform: translateX(0px);
 }
+
 .main-menu ul li ul.submenu.megamenu ul li:hover > a{
     background: #008c99;
     color:#fff;

@@ -9,11 +9,13 @@ namespace WebPortalStudent.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IS_Person _person;
+        private readonly IS_NewsCategory  _newscategory;
 
-        public HomeController(ILogger<HomeController> logger, IS_Person person)
+        public HomeController(ILogger<HomeController> logger, IS_Person person, IS_NewsCategory newscategory)
         {
             _logger = logger;
             _person = person;
+            _newscategory = newscategory;
         }
 
         public async Task<IActionResult> Index()
@@ -25,11 +27,11 @@ namespace WebPortalStudent.Controllers
             ViewBag.data = resTeacher.data;
             return View();
         }
-
         public IActionResult Privacy()
         {
             return View();
         }
+     
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

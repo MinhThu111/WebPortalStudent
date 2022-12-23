@@ -1,20 +1,28 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Category";
+
+    var dataNews = ViewBag.DataNews as IEnumerable<M_News>;
+}
+@section Styles{
+    <partial name="_P_StylesTableAndFormBasic" />
+    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
+}
+@section Scripts{
+    <partial name="_P_ScriptsTableAndFormBasic" />
+    <script src="~/js/site.js" asp-append-version="true"></script>
 }
 
-<!-- Start Banner Area-->
 <div class="banner-area text-center">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <div class="banner-content-wrapper">
                     <div class="banner-content">
-                        <h2>events</h2>
+                        <h2>Tin Mới</h2>
                         <div class="banner-breadcrumb">
                             <ul>
-                                <li><a href="index.html">home </a> /</li>
-                                <li>events</li>
+                                <li><a href="index.html">Trang chủ </a> /</li>
+                                <li>Tin tức</li>
                             </ul>
                         </div>
                     </div>
@@ -23,56 +31,53 @@
         </div>
     </div>
 </div>
-<!-- End Banner Area -->
-<!-- Start of events Area -->
 <div class="events-area pt-90 pb-90 single">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <div class="section-title text-center">
-                    <h2>our events</h2>
-                    <p>There are many varieations of passages Lorem Ipsum maksu rez majority have</p>
+                    <h2>@ViewBag.Name</h2>
+                    <p>Tin tức mới nhất gần đây</p>
                 </div>
             </div>
         </div>
         <div class="inner">
-            <div class="single-event ml-120 mr-120 mb-20 fix row">
-                <div class="col-lg-5">
-                    <div class="event-img">
-                        <img src="~/assets/images/event/3.jpg" alt="event">
-                        <div class="event-hover">
-                            <a class="img-poppu" href="~/assets/images/event/3.jpg"><i class="icofont icofont-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="single-event-owl">
-                        <div class="event-content">
-                            <h3><a href="#">MOTHERS DAY </a><span>21 Feb</span></h3>
-                            <p>It is a long established fact that a reader will be distracted by  readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-event ml-120 mr-120 mb-20 fix row">
-                <div class="col-lg-7">
-                    <div class="single-event-owl">
-                        <div class="event-content">
-                            <h3><a href="#">MOTHERS DAY </a><span>21 Feb</span></h3>
-                            <p>It is a long established fact that a reader will be distracted by  readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="event-img">
-                        <img src="~/assets/images/event/4.jpg" alt="event">
-                        <div class="event-hover">
-                            <a class="img-poppu" href="~/assets/images/event/4.jpg"><i class="icofont icofont-link-alt"></i></a>
-                        </div>
-                    </div>
+            <div class="container">
+                <div class="row">
+                    @if (dataNews != null)
+                    {
+                        @foreach (var item in dataNews)
+                        {
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="card">
+                                    <a class="img-card" href="https://inlikeme.com/wp-content/uploads/2019/05/Messages-Image458805902.jpeg">
+                                        <img src="https://inlikeme.com/wp-content/uploads/2019/05/Messages-Image458805902.jpeg" />
+                                    </a>
+                                    <div class="card-content">
+                                        <h4 class="card-title">
+                                            <a href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
+                                                @item.Title
+                                            </a>
+                                        </h4>
+                                        <p class="">
+                                            @item.Description
+                                        </p>
+                                    </div>
+                                    <div class="card-read-more">
+                                        <a type="button" asp-controller="Category" asp-action="NewsView" asp-route-id="@item.Id" asp-route-categoryid="@item.NewsCategoryId" class="btn btn-link btn-block">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p>Không có thông tin hiển thị</p>
+                    }
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- End of events Area -->

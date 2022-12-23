@@ -1,4 +1,12 @@
-﻿
+﻿@{
+    var dataNewscategory = ViewBag.Newscategory as IEnumerable<M_NewsCategory>;
+}
+@section Styles{
+    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
+}
+@section Scripts{
+    <script src="~/js/site.js" asp-append-version="true"></script>
+}
 <header class="header-area sticker" id="topnav">
     <div class="header-wrapper header-padding">
         <div class="header-top hidden-xs">
@@ -29,10 +37,32 @@
                         <div class="content-wrapper">
                             <div class="main-menu text-right">
                                 <nav>
-                                    <ul class="navigation-menu">
-                                        <li><a asp-controller="Home" asp-action="Index">TRANG CHỦ </a></li>
-                                        <li class="hidden-sm"><a asp-controller="Teacher" asp-action="Index">GIẢNG VIÊN</a></li>
-                                        <li><a asp-controller="Category" asp-action="Index">TIN TỨC</a></li>
+                                    <ul class="navigation-menu menu">
+                                        <li>
+                                            <a asp-controller="Home" asp-action="Index">TRANG CHỦ </a>
+                                        </li>
+                                        <li class="hidden-sm">
+                                            <a asp-controller="Teacher" asp-action="Index">GIẢNG VIÊN</a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    TIN TỨC
+                                                </a>
+                                                <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" style=" background-color: #F1F1F1 !important;">
+
+                                                    <a class="dropdown-item w-100 " asp-controller="Category" asp-action="Index" asp-route-id="0" style="font-size: 20px; padding: 10px 10px;">Tin mới</a>
+                                                    @if (dataNewscategory != null)
+                                                    {
+                                                        @foreach (var items in dataNewscategory)
+                                                        {
+                                                            <a class="dropdown-item w-100 mr-5" asp-controller="Category" asp-action="Index" asp-route-id="@items.Id" style="font-size:20px; padding:10px 10px;">@items.Name</a>
+                                                        }
+                                                    }
+                                                </div>
+                                            </div>
+                                        </li>
+
                                     </ul>
                                 </nav>
                             </div>

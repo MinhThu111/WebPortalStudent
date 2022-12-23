@@ -19,6 +19,7 @@ NOTE: This is Footer style file. All footer related style included in this file.
     color: #fff;
     font-size: 14px;
     margin-bottom: 0;
+    text-decoration:none;
 }
 .footer-widget ul li{
     text-transform: capitalize;
