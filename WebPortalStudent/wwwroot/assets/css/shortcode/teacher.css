@@ -8,6 +8,7 @@ NOTE: This is Teacher style file. All Header related style included in this file
     position: relative;
     line-height: 0;
 }
+    
 .teacher-content{
     position: absolute;
     bottom: 0;
@@ -24,7 +25,7 @@ NOTE: This is Teacher style file. All Header related style included in this file
 .teacher-content h3, .teacher-content p{
     font-size: 16px;
     color: #fff;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Sriracha', cursive;
     text-transform: uppercase;
     margin-bottom: 0px;
     -webkit-transition: all 0.1s ease 0s;
