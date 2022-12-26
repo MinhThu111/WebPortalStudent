@@ -51,28 +51,32 @@
                 {
                     @foreach (var item in dataNews)
                     {
-                        <div class="col-12 col-lg-12 col-xl-12" >
-                            <div class="card">
-                                <div class="row no-gutters">
-                                    <div class="col-md-5">
-                                        <img src="@item.avatarurl" class="card-imgs" alt="avater">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="card-body">
-                                            <h5 class="card-title">
-                                                <a asp-controller="News" asp-action="Detail" asp-route-id="@item.id" asp-route-titleslug="@item.titleSlug">
-                                                    @item.title
+                        @if (item.createdAt?.ToString("dd/MM/yyyy") == DateTime.Now.ToString("dd/MM/yyyy") || item.updatedAt?.ToString("dd/MM/yyyy") == DateTime.Now.ToString("dd/MM/yyyy"))
+                        {
+                            <div class="col-12 col-lg-12 col-xl-12">
+                                <div class="card">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-5">
+                                            <img src="@item.avatarurl" class="card-imgs" alt="avater">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    <a asp-controller="News" asp-action="Detail" asp-route-id="@item.id" asp-route-titleslug="@item.titleSlug">
+                                                        @item.title
+                                                    </a>
+                                                </h5>
+                                                <p class="card-text">@item.description</p>
+                                                <a asp-controller="News" asp-action="Detail" asp-route-id="@item.id" asp-route-titleslug="@item.titleSlug" class="btn btn-info">
+                                                    Read More
                                                 </a>
-                                            </h5>
-                                            <p class="card-text">@item.description</p>
-                                            <a asp-controller="News" asp-action="Detail" asp-route-id="@item.id" asp-route-titleslug="@item.titleSlug" class="btn btn-info" >
-                                                Read More
-                                            </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        }
+
                     }
                 }
                 else
@@ -93,7 +97,7 @@
                                     </div>
                                     <div class="nl-title ">
                                         <a class="text-black" asp-controller="News" asp-action="Detail" asp-route-id="@item.id" asp-route-titleslug="@item.titleSlug">@item.title</a>
-                                        <br/>
+                                        <br />
                                         <p style="float:right; color:black">@item.createdAt?.ToString("dd/MM/yyyy")</p>
                                     </div>
                                 </div>

@@ -4,20 +4,20 @@ using System;
 
 namespace WebPortalStudent.Services
 {
-    public interface IS_Grade
+    public interface IS_Subject
     {
-        Task<ResponseData<List<M_Grade>>> getListGrade(string accessToken);
+        Task<ResponseData<List<M_Subject>>> getListSubject(string accessToken);
     }
-    public class S_Grade : IS_Grade
+    public class S_Subject : IS_Subject
     {
         private readonly ICallBaseApi _callApi;
-        public S_Grade(ICallBaseApi callApi)
+        public S_Subject(ICallBaseApi callApi)
         {
             _callApi = callApi;
         }
-        public async Task<ResponseData<List<M_Grade>>> getListGrade(string accessToken)
+        public async Task<ResponseData<List<M_Subject>>> getListSubject(string accessToken)
         {
-            return await _callApi.GetResponseDataAsync<List<M_Grade>>("/Grade/getListGrade", default(Dictionary<string, dynamic>), accessToken);
+            return await _callApi.GetResponseDataAsync<List<M_Subject>>("/Subject/getListSubject", default(Dictionary<string, dynamic>), accessToken);
         }
      
     }
