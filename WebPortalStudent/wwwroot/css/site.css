@@ -68,15 +68,15 @@ h1.heading {
     display: block;
     margin-bottom: 20px;
     line-height: 1.42857143;
-    background-color:rgb(52, 104, 201, 0.12);
+    background-color: #F1F1F1;
     border-radius: 2px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     transition: box-shadow 0.25s;
 }
     .card:hover {
         box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        background-color: #b200ff;
-        color:white;
+        background-color: #008C99;
+        color: white;
     }
 
     .img-card {

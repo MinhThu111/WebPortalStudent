@@ -930,12 +930,12 @@ button.btn:hover {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    background-color:antiquewhite;
+    background-color:#F1F1F1;
     padding:10px;
     color:black;
 }
-    .sidebar .news-list .nl-item:hover{
-        background-color:#00ffff;
+    .sidebar .news-list .nl-item:hover {
+        background-color: #008C99;
     }
 
     .sidebar .news-list .nl-item .nl-img {
@@ -947,7 +947,7 @@ button.btn:hover {
 .sidebar .news-list .nl-item .nl-img img {
     width: 90px;
     height:50px;
-    object-fit:fill;
+    object-fit:cover;
 }
 
 .sidebar .news-list .nl-item .nl-title {
@@ -1035,14 +1035,14 @@ button.btn:hover {
     .sidebar .category ul li {
         margin: 0 0 12px 22px;
         text-align: left;
-        background: #156d7c;
+        background: #F1F1F1;
         border: 1px solid #000000;
         border-radius:5px;
         padding:5px;
     }
-    .sidebar .category ul li:hover {
-        background: #FF6F61;
-    }
+        .sidebar .category ul li:hover {
+            background: #008C99;
+        }
 
 .sidebar .category ul li:last-child {
     margin-bottom: 0; 
@@ -1050,16 +1050,16 @@ button.btn:hover {
 
 .sidebar .category ul li a {
     display: inline-block;
-    color: #ffffff;
+    color: black;
     line-height: 23px;
     text-decoration:none;
     text-align:left;
     text-transform: uppercase;
 }
 
-.sidebar .category ul li a:hover {
-    color: #000000;
-}
+    .sidebar .category ul li a:hover {
+        color: white;
+    }
 
 .sidebar .category ul li::before {
     position: absolute;
