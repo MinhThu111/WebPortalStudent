@@ -7,8 +7,6 @@ using WebPortalStudent.Lib;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using WebPortalStudent.Services;
 using WebPortalStudent.Mapper;
-using WebPortalStudent.Lib;
-using WebPortalStudent.Mapper;
 
 void GetDefaultHttpClient(IServiceProvider serviceProvider, HttpClient httpClient, string hostUri)
 {
@@ -89,6 +87,7 @@ builder.Services.AddScoped<IS_News, S_News>();
 builder.Services.AddScoped<IS_NewsCategory, S_NewsCategory>();
 builder.Services.AddScoped<IS_TeacherSubject, S_TeacherSubject>();
 builder.Services.AddScoped<IS_Subject, S_Subject>();
+builder.Services.AddScoped<IS_Grade, S_Grade>();
 
 
 var app = builder.Build();
