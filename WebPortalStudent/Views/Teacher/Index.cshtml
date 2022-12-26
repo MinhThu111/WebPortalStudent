@@ -1,7 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Giảng viên";
     var data = ViewBag.data as IEnumerable<M_TeacherSubject>;
-    var dataSubject = ViewBag.subject as IEnumerable<M_Subject>;
 }
 @section Styles{
     <partial name="_P_StylesTableAndFormBasic" />
@@ -43,14 +42,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="row">
                     @foreach (var item in data)
                     {
                         <div class="col-lg-4 ">
                             <div class="single-teacher mb-30">
                                 <div class="teacher-img">
-                                    <img src=@item.teacherObj.avatarUrl alt="teacher" style="height:250px; width:100%; object-fit:cover" data-bs-toggle="modal" data-bs-target="#modal_@item.id">
+                                    <img src=@item.teacherObj.avatarUrl alt="teacher" style="height:250px; width:100%; object-fit:cover" data-bs-toggle="modal" data-bs-target="#modal_@item.id"/>
                                     <div class="teacher-content">
                                         <h3>@item.teacherObj.lastName @item.teacherObj.firstName</h3>
                                         <p class="float-end m-2">Giáo viên @item.subjectObj.Name</p>
@@ -126,24 +125,8 @@
                             </div>
                         </div>
                     }
-
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="sidebar">
-                    <div class="sidebar-widget">
-                        <h2 class="sw-title">Môn học</h2>
-                        <div class="category">
-                            <ul>
-                                @foreach (var item in dataSubject)
-                                {
-                                    <li><a asp-controller="Teacher" asp-action="Subject" asp-route-id="@item.Id" asp-route-name="@item.Name"><i class='bx bx-right-arrow-alt'></i> @item.Name</a></li>
-                                }
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div>    
         </div>
     </div>
 </div>
