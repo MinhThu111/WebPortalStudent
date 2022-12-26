@@ -9,8 +9,9 @@ body {
 }
 
 a {
-    color: #FF6F61;
+    color: #555555;
     transition: 0.5s;
+    text-decoration:none;
 }
 
 a:hover,
@@ -929,30 +930,41 @@ button.btn:hover {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    background-color:antiquewhite;
+    padding:10px;
+    color:black;
 }
+    .sidebar .news-list .nl-item:hover{
+        background-color:#00ffff;
+    }
 
-.sidebar .news-list .nl-item .nl-img {
-    width: 100px;
-}
+    .sidebar .news-list .nl-item .nl-img {
+        max-width:150px;
+        width:100%;
+        height: auto;
+    }
 
 .sidebar .news-list .nl-item .nl-img img {
-    width: 100px;
+    width: 90px;
+    height:50px;
+    object-fit:fill;
 }
 
 .sidebar .news-list .nl-item .nl-title {
-    padding-left: 15px;
+    padding-left: 10px;
+    text-align:left;
+    font-size:14px;
+    width:100%;
 }
 
 .sidebar .news-list .nl-item .nl-title a {
-    color: #000000;
-    font-size: 16px;
-    font-weight: 400;
+    /*color: #000000;*/
     transition: all .3s;
     text-decoration:none;
 }
 
 .sidebar .news-list .nl-item .nl-title a:hover {
-    color: #FF6F61;
+    
 }
 
 .sidebar .sidebar-widget .tab-news {
@@ -1014,16 +1026,23 @@ button.btn:hover {
     position: relative;
 }
 
-.sidebar .category ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+    .sidebar .category ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
-.sidebar .category ul li {
-    margin: 0 0 12px 22px; 
-    text-align:left;
-}
+    .sidebar .category ul li {
+        margin: 0 0 12px 22px;
+        text-align: left;
+        background: #156d7c;
+        border: 1px solid #000000;
+        border-radius:5px;
+        padding:5px;
+    }
+    .sidebar .category ul li:hover {
+        background: #FF6F61;
+    }
 
 .sidebar .category ul li:last-child {
     margin-bottom: 0; 
@@ -1031,7 +1050,7 @@ button.btn:hover {
 
 .sidebar .category ul li a {
     display: inline-block;
-    color: #000000;
+    color: #ffffff;
     line-height: 23px;
     text-decoration:none;
     text-align:left;
@@ -1039,18 +1058,16 @@ button.btn:hover {
 }
 
 .sidebar .category ul li a:hover {
-    color: #FF6F61;
+    color: #000000;
 }
 
 .sidebar .category ul li::before {
     position: absolute;
-    content: '\f061';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: #000000;
     left: 1px;
 }
-
 .sidebar .category ul li span {
     display: inline-block;
     float: right;

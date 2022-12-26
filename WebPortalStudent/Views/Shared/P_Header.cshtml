@@ -49,14 +49,14 @@
                                                 <a class="dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     TIN TỨC
                                                 </a>
-                                                <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" style=" background-color: #F1F1F1 !important;">
+                                                <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" style=" background-color: #F1F1F1 !important; width: 250px; padding-left: 60px">
 
-                                                    <a class="dropdown-item w-100 " asp-controller="Category" asp-action="Index" asp-route-id="0" style="font-size: 20px; padding: 10px 10px;">Tin mới</a>
+                                                    <a class="dropdown-item w-100 " asp-controller="News" asp-action="Index" style="font-size: 20px; padding: 10px 10px;">Tin mới</a>
                                                     @if (dataNewscategory != null)
                                                     {
                                                         @foreach (var items in dataNewscategory)
                                                         {
-                                                            <a class="dropdown-item w-100 mr-5" asp-controller="Category" asp-action="Index" asp-route-id="@items.Id" style="font-size:20px; padding:10px 10px;">@items.Name</a>
+                                                            <a class="dropdown-item w-100 mr-5" asp-controller="News" asp-action="Index" asp-route-category="@items.Id" style="font-size:20px; padding:10px 10px;">@items.Name</a>
                                                         }
                                                     }
                                                 </div>

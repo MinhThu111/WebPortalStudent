@@ -21,7 +21,7 @@ namespace WebPortalStudent.Controllers
         private IMemoryCache memoryCache;
         protected IMemoryCache _memoryCache => memoryCache ?? (memoryCache = HttpContext?.RequestServices.GetService<IMemoryCache>());
         protected IMapper _mapper => mapper ?? (mapper = HttpContext?.RequestServices.GetService<IMapper>());
-        
+
         protected IHttpContextAccessor _httpContextAccessor => httpContextAccessor ?? (httpContextAccessor = HttpContext?.RequestServices.GetService<IHttpContextAccessor>());
 
         protected string _accessToken => IsNullOrEmpty(accessToken) ? (accessToken = HttpContext?.User.Claims.FirstOrDefault(c => c.Type == "AccessToken")?.Value) : accessToken;
@@ -30,25 +30,7 @@ namespace WebPortalStudent.Controllers
 
         protected string _supplierId => IsNullOrEmpty(supplierId) ? (supplierId = HttpContext?.User.Claims.FirstOrDefault(c => c.Type == "SupplierId")?.Value) : supplierId;
 
-
-        //protected async Task SetDropDownListProvince(string selectedId = "0")
-        //{
-        //    List<VM_SelectDropDown> result = new List<VM_SelectDropDown>();
-        //    var res = await HttpContext?.RequestServices.GetService<IS_Address>().getListProvinceByStatusCountryId(_accessToken);
-        //    if (res.result == 1 && res.data != null)
-        //        result = _mapper.Map<List<VM_SelectDropDown>>(res.data);
-        //    ViewBag.ProvinceId = new SelectList(result, "Id", "Name", selectedId);
-        //}
-
-        protected async Task SetDropDownListProvince(int? selectedId = 0)
-        {
-            List<VM_SelectDropDown> result = new List<VM_SelectDropDown>();
-            var res = await HttpContext?.RequestServices.GetService<IS_Address>().getListProvinceByStatusCountryId(_accessToken);
-            if (res.result == 1 && res.data != null)
-                result = _mapper.Map<List<VM_SelectDropDown>>(res.data);
-            ViewBag.ProvinceId = new SelectList(result, "Id", "Name", selectedId);
-        }
-
+    
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             if (!_memoryCache.TryGetValue("news_category_menu", out ResponseData<List<M_NewsCategory>> newsCategory))
@@ -69,8 +51,8 @@ namespace WebPortalStudent.Controllers
             //ViewBag.Newscategory = newsCategory.data ?? new List<M_NewsCategory>();
             ////ViewBag.SupplierInfo = newsCategory.data ?? new List<M_NewsCategory>();
 
-            var resNewsCategory = HttpContext?.RequestServices.GetService<IS_NewsCategory>().getNewCategoryMenu(_accessToken).Result;
-            ViewBag.Newscategory = resNewsCategory.data;
+            var resNewCategory = (ResponseData<List<M_NewsCategory>>)_memoryCache.Get("news_category_menu");
+            ViewBag.Newscategory = resNewCategory.data;
             base.OnActionExecuting(context);
         }
 

@@ -1,0 +1,28 @@
+﻿.divbody {
+    min-height: 250px;
+}
+.astyle {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: blue;
+    color: white;
+    padding: 1rem 4rem;
+    border-radius: 4rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+}
+    .astyle:hover {
+        color: #0a0a0a;
+        background-color: #fff;
+        border:1px solid black;;
+    }
+
+.h1style {
+    font-size: 150px;
+    text-align:center;
+}
+.h2style {
+    text-align:center;
+}
+
