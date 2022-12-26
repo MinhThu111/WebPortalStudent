@@ -20,9 +20,6 @@ namespace WebPortalStudent.Models
         public string phoneNumber { get; set; }
         public string email { get; set; }
         public string remark { get; set; }
-        public M_Nationality nationalityObj { get; set; }
-        public M_PersonType personTypeObj { get; set; }
-        public EM_Address addressObj { get; set; }
 
     }
     public class EM_Person:M_BaseModel.BaseCustom
@@ -46,7 +43,7 @@ namespace WebPortalStudent.Models
         [DataType(DataType.EmailAddress)]
         public string email { get; set; }
         public string remark { get; set; }
-        public EM_Address addressObj { get; set; }
+        //public EM_Address addressObj { get; set; }
 
     }
     public class VM_Person: M_BaseModel.BaseCustom

@@ -1,0 +1,118 @@
+﻿@{
+    ViewData["Title"] = "Tin tức";
+    var dataNews = ViewBag.dataNews as IEnumerable<M_News>;
+    var newsCategory = ViewBag.dataNewsCategory as IEnumerable<M_NewsCategory>;
+}
+@section Styles{
+    <partial name="_P_StylesTableAndFormBasic" />
+    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/assets/css/style_categorypage.css" rel="stylesheet" asp-append-version="true" />
+}
+@section Scripts{
+    <partial name="_P_ScriptsTableAndFormBasic" />
+    <script src="~/js/site.js" asp-append-version="true"></script>
+}
+
+<div class="banner-area text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="banner-content-wrapper">
+                    <div class="banner-content">
+                        <h2>Tin Mới</h2>
+                        <div class="banner-breadcrumb">
+                            <ul>
+                                <li><a href="index.html">Trang chủ </a> /</li>
+                                <li>Tin tức</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="events-area pt-10 pb-1 single">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-title text-center">
+                    <h2>@ViewBag.Name</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="teacher-area text-center pt-10 pb-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                @if (dataNews != null)
+                {
+                    @foreach (var item in dataNews)
+                    {
+                        <div class="col-12 col-lg-12 col-xl-12">
+                            <div class="card ">
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                        <img src="@item.avatarurl" class="card-imgs" alt="avater">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                <a asp-controller="News" asp-action="Detail" asp-route-id="@item.id" asp-route-titleslug="@item.titleSlug">
+                                                    @item.title
+                                                </a>
+                                            </h5>
+                                            <p class="card-text">@item.description</p>
+                                            <a asp-controller="News" asp-action="Detail" asp-route-id="@item.id" asp-route-titleslug="@item.titleSlug" class="btn btn-link btn-block" >
+                                                Read More
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p>Không có thông tin hiển thị</p>
+                }
+            </div>
+            <div class="col-lg-5">
+                <div class="sidebar">
+                    <div class="sidebar-widget">
+                        <h2 class="sw-title">Tin tức mới</h2>
+                        <div class="news-list">
+                            @foreach (var item in dataNews)
+                            {
+                                <div class="nl-item">
+                                    <div class="nl-img">
+                                        <img src="@item.avatarurl" style="width:150px; height:60px" />
+                                    </div>
+                                    <div class="nl-title">
+                                        <a asp-controller="News" asp-action="Detail" asp-route-id="@item.id" asp-route-titleslug="@item.titleSlug">@item.title</a>
+                                        <br/>
+                                        <p style="float:right">@item.createdAt?.ToString("dd/MM/yyyy")</p>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <div class="sidebar-widget">
+                        <h2 class="sw-title">Danh mục tin tức</h2>
+                        <div class="category">
+                            <ul>
+                                @foreach (var item in newsCategory)
+                                {
+                                    <li><a asp-controller="News" asp-action="Index" asp-route-category="@item.Id"><i class='bx bxs-hand-right'></i> @item.Name<span>()</span></a></li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

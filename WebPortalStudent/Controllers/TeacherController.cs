@@ -20,10 +20,5 @@ namespace WebPortalStudent.Controllers
             ViewBag.data = res.data;
             return View();
         }
-        [HttpGet]
-        public async Task<IActionResult>P_View(int id)
-        {
-            return PartialView();
-        }
     }
 }
