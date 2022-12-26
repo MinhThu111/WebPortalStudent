@@ -12,6 +12,8 @@ namespace WebPortalStudent.Mapper
             #endregion
 
             CreateMap<M_Person, EM_Person>();
+           
+           
 
         }
     }

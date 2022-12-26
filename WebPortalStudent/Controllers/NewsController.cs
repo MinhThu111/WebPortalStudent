@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.View;
+using System.Reflection.Metadata.Ecma335;
 using WebPortalStudent.Lib;
 using WebPortalStudent.Models;
 using WebPortalStudent.Services;
@@ -44,8 +45,9 @@ namespace WebPortalStudent.Controllers
         {
             var res = await _news.getNewsById(_accessToken, id);
             if (res.result != 1 || res.data == null)
-                return RedirectToAction("Index","Error");   //tao controller 404, task
-            var resListNewData = await _news.getListNewsByCategoryId(_accessToken, res.data.newscategoryid.Value);  
+                return RedirectToAction("Index","Error");
+
+            var resListNewData = await _news.getListNewsByCategoryId(_accessToken, res.data.newscategoryid.Value);
             var resNewCategory = (ResponseData<List<M_NewsCategory>>)_memoryCache.Get("news_category_menu");
             ViewBag.dataNewsCategory = resNewCategory.data;
             ViewBag.resListNewData = resListNewData.data;

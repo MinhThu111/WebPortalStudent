@@ -23,7 +23,7 @@ namespace WebPortalStudent.Controllers
             var resTeacher = await _person.getListPersonBySequenceStatus(_accessToken, "1,0", "2");
             var resCount = await _person.getCountPersonByPersonType(_accessToken);
             ViewBag.CountData = resCount.data;
-            ViewBag.SumData = resCount.data.Sum(x => x.count);
+            ViewBag.SumData = 14;
             ViewBag.data = resTeacher.data;
             return View();
         }

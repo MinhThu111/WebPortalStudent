@@ -7,8 +7,8 @@ namespace WebPortalStudent.Services
     public interface IS_Person
     {
         Task<ResponseData<M_Person>> getPersonById(string accessToken, int id);
-        Task<ResponseData<List<M_Count>>> getCountPersonByPersonType(string accessToken);
         Task<ResponseData<List<M_Person>>> getListPersonBySequenceStatus(string accessToken, string sequenceStatus, string lstpersontypeid);
+        Task<ResponseData<List<M_Count>>> getCountPersonByPersonType(string accessToken);
 
     }
     public class S_Person : IS_Person
@@ -39,6 +39,7 @@ namespace WebPortalStudent.Services
             };
             return await _callApi.GetResponseDataAsync<List<M_Person>>("/Person/getListPersonBySequenceStatus", dictPars, accessToken);
         }
-     
+
+
     }
 }

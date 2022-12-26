@@ -87,6 +87,8 @@ builder.Services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
 builder.Services.AddScoped<IS_Person, S_Person>();
 builder.Services.AddScoped<IS_News, S_News>();
 builder.Services.AddScoped<IS_NewsCategory, S_NewsCategory>();
+builder.Services.AddScoped<IS_TeacherSubject, S_TeacherSubject>();
+builder.Services.AddScoped<IS_Subject, S_Subject>();
 
 
 var app = builder.Build();
@@ -147,21 +149,13 @@ app.UseEndpoints(endpoints =>
         pattern: "tin-tuc/{titleSlug}-{id}",
         defaults: new { controller = "News", action = "Detail" });
     endpoints.MapControllerRoute(
-        name: "Account LogIn",
-        pattern: "account/login",
-        defaults: new { controller = "Account", action = "LogIn" });
-    endpoints.MapControllerRoute(
-        name: "Account ChooseSession",
-        pattern: "account/choose-session",
-        defaults: new { controller = "Account", action = "ChooseSession" });
-    endpoints.MapControllerRoute(
-        name: "Account SignOut",
-        pattern: "account/signout",
-        defaults: new { controller = "Account", action = "SignOut" });
-    endpoints.MapControllerRoute(
         name: "History update",
         pattern: "history-update",
         defaults: new { controller = "HistoryUpdate", action = "Index" });
+    endpoints.MapControllerRoute(
+        name: "Teacher Subject",
+        pattern: "giao-vien-mon/{name}",
+        defaults: new { controller = "Teacher", action = "Subject" });
     endpoints.MapControllerRoute(
         name: "Error page",
         pattern: "error/{statusCode}",
