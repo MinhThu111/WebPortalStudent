@@ -9,31 +9,27 @@ namespace WebPortalStudent.Controllers
     public class TeacherController : BaseController<TeacherController>
     {
         private readonly ILogger<HomeController> _logger;
-        //private readonly IS_Person _person;
         private readonly IS_TeacherSubject _teachersubject;
-        private readonly IS_Subject _subject;
+        private readonly IS_Grade _grade;
 
-        public TeacherController(ILogger<HomeController> logger, IS_TeacherSubject teachersubject, IS_Subject subject)
+        public TeacherController(ILogger<HomeController> logger, IS_TeacherSubject teachersubject, IS_Grade grade)
         {
             _logger = logger;
             _teachersubject = teachersubject;
-            _subject = subject;
+            _grade = grade;
         }
 
         public async Task<IActionResult> Index()
         {
             var res = await _teachersubject.getListTeacherSubject(_accessToken);
-            var resSubject= await _subject.getListSubject(_accessToken);
-            ViewBag.subject = resSubject.data;
             ViewBag.data = res.data;
             return View();
         }
-        public async Task<IActionResult>Subject(int id,string name)
+        public async Task<IActionResult>Grade()
         {
-            var res = await _teachersubject.getListTeacherByIdSubject(_accessToken, id);
-            var resSubject = await _subject.getListSubject(_accessToken);
-            ViewBag.subject = resSubject.data;
-            ViewBag.data = res.data;
+            var resGrade = await _grade.getListGrade(_accessToken);
+            ViewBag.dataGrade=resGrade.data;
+            
             return View();
         }
     }
