@@ -71,6 +71,8 @@ builder.Services.AddHttpClient("custom")
     .SetHandlerLifetime(TimeSpan.FromMinutes(5)) //Default is 2 min
     .ConfigurePrimaryHttpMessageHandler(x => GetDefaultHttpClientHandler());
 
+builder.Services.Configure<Config_MetaSEO>(builder.Configuration.GetSection("MetaSEO"));
+
 builder.Services.AddSingleton<IBase_CallApi, Base_CallApi>();
 builder.Services.AddSingleton<ICallBaseApi, CallBaseApi>();
 builder.Services.AddSingleton<ICallApi, CallApi>();
